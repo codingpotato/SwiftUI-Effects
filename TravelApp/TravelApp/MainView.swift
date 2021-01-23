@@ -33,7 +33,7 @@ struct MainView: View {
                 .padding(.bottom, UIApplication.shared.windows.first?.safeAreaInsets.bottom == 0 ? 15 : UIApplication.shared.windows.first?.safeAreaInsets.bottom)
                 .padding(.horizontal, 35)
                 .background(Color.white)
-                .clipShape(RoundedShape(corners: [.topLeft,.topRight]))
+                .clipShape(RoundedShape(corners: [.topLeft, .topRight]))
             }
             if show {
                 DetailView(animation: animation, show: $show, selected: $selected)
